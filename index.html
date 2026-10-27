@@ -39,6 +39,9 @@ h1.logo img{display:block;width:min(100%,460px);height:auto;margin-left:-4%}
 .toolbar button[aria-pressed="true"]{background:var(--ink);color:var(--paper)}
 .toolbar button:focus-visible,.card:focus-visible,dialog button:focus-visible{outline:3px solid var(--red);outline-offset:2px}
 .count{margin-left:auto;color:var(--muted);font-size:14px}
+.meetlink{display:inline-block;margin-top:16px;padding:8px 20px;background:var(--hl);color:#14213d;font-weight:700;text-decoration:none;border:2px solid var(--ink)}
+.meetlink:hover{transform:translate(-3px,-3px);box-shadow:5px 5px 0 var(--ink)}
+.meetlink:focus-visible{outline:3px solid var(--red);outline-offset:2px}
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:18px;padding-bottom:64px}
 .card{all:unset;box-sizing:border-box;cursor:pointer;background:var(--card);border:2px solid var(--ink);padding:16px;display:block;position:relative}
 .card:hover{transform:translate(-3px,-3px);box-shadow:5px 5px 0 var(--ink)}
@@ -76,6 +79,7 @@ footer{padding:28px 0;border-top:2px solid var(--ink);color:var(--muted);font-si
   <header class="hero">
     <h1 class="logo"><img src="logo.png" alt="The Jumping Nerds"></h1>
     <p class="sub">陸上競技という物語を紡ぐ、陸上狂の、陸上狂による、陸上狂のためのチーム。選手をクリックすると詳細が見られます。</p>
+   
     <svg class="arc" viewBox="0 0 600 190" aria-hidden="true">
   <style>
     .arc { background-color: #1a1a1a; border-radius: 8px; }
@@ -84,6 +88,7 @@ footer{padding:28px 0;border-top:2px solid var(--ink);color:var(--muted);font-si
     text { fill: #fff; font-size: 14px; font-family: sans-serif; }
     .pose path, .pose circle { stroke: #fff; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; fill: none; }
     .pose circle { fill: #fff; }
+    
   </style>
 
   <!-- コース・背景 -->
@@ -163,9 +168,10 @@ footer{padding:28px 0;border-top:2px solid var(--ink);color:var(--muted);font-si
   </g>
 </svg>
   </header>
-
+   <a class="meetlink" href="meets.html">大会出場情報を見る</a>
   <div class="toolbar" id="filters" role="group" aria-label="種目で絞り込み"></div>
   <div class="grid" id="grid"></div>
+  
   <footer>© Jumping Nerds Track &amp; Field Club(サンプルデータ・架空の選手です)</footer>
 </div>
 
